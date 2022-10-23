@@ -3,8 +3,8 @@ services:
     container_name: postgres-deployment
     image: postgres:latest
     environment:
-      - POSTGRES_USER=root
-      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=q1w2e3r4
       - POSTGRES_DB=postgres
     ports:
       - "5432:5432"
@@ -14,7 +14,7 @@ services:
     container_name: pgadmin-deployment
     image: dpage/pgadmin4:latest
     environment:
-      - PGADMIN_DEFAULT_EMAIL=test@teste.com
+      - PGADMIN_DEFAULT_EMAIL=teste@teste.com
       - PGADMIN_DEFAULT_PASSWORD=q1w2e3r4
     ports:
       - "5050:80"
